@@ -1,32 +1,80 @@
 {
   "version": "2.0",
-  "dataset_id": "on005121",
-  "source": "openneuro",
-  "source_id": "ds005121",
+  "pipeline_stage": "validated",
   "title": "Siefert2024",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
-    "Elizabeth M. Siefert": {},
+    "Elizabeth M. Siefert": {
+      "orcid": "0000-0002-5413-195X"
+    },
     "Sindhuja Uppuluri": {},
     "Jianing Mu": {},
     "Marlie C. Tandoc": {},
     "James W. Antony": {},
-    "Anna C. Schapiro": {}
+    "Anna C. Schapiro": {
+      "orcid": "0000-0001-8086-0331"
+    }
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005121.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005121",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005121",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1523/JNEUROSCI.0022-24.2024",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.2",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset contains sleep EEG recordings from 34 participants during targeted memory reactivation (TMR), a technique that uses auditory cues to selectively reactivate learned memories during sleep. The study investigates whether memory reactivation during sleep acts holistically on object memory or selectively enhances specific memory features. EEG data are accompanied by detailed event markers indicating cueing events and sleep spindle detection.",
+  "methods_description": "Sleep EEG data were collected from 34 participants during targeted memory reactivation. Auditory cues were administered during sleep to reactivate memories of learned satellite objects from different learning conditions (blocked, interleaved, and uncued categories). EEG data were organized using the FieldTrip data2bids function and formatted according to BIDS standards. Event markers include information about cueing events, sound indices, and satellite numbers corresponding to learned items.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "sleep"
+    },
+    {
+      "term": "memory reactivation"
+    },
+    {
+      "term": "targeted memory reactivation"
+    },
+    {
+      "term": "sleep spindles"
+    },
+    {
+      "term": "learning"
+    }
+  ],
+  "source_hash": "20d93784c923d48841430ee77ddef7464dee1d65677f887fb11d1edb0ace1a6d"
 }
