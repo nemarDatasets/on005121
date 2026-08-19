@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Siefert2024",
+  "description": "This dataset contains overnight sleep EEG recordings from 34 participants who underwent Targeted Memory Reactivation (TMR) during sleep, as part of a study investigating whether memory reactivation acts holistically on object memory. Auditory cues associated with previously studied items (categorized as blocked, interleaved, or uncued) were played during sleep, and event markers recorded corresponding cue-related information. The dataset is formatted according to the BIDS standard to support reuse in sleep and memory research.",
+  "methods_description": "Sleep EEG data were collected while Targeted Memory Reactivation (TMR) cues were administered to participants during sleep. Events.tsv files record cueing events, including sound index numbers and corresponding satellite (studied item) identifiers. Data organization into BIDS format was performed using the FieldTrip data2bids function.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,6 +18,31 @@
       "orcid": "0000-0001-8086-0331"
     }
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Sleep",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
+    },
+    {
+      "term": "memory consolidation"
+    },
+    {
+      "term": "targeted memory reactivation"
+    },
+    {
+      "term": "declarative memory"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "FieldTrip"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005121.v1.0.2",
@@ -28,23 +55,23 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005121",
-      "identifier_type": "URL",
+      "identifier": "10.1523/JNEUROSCI.0022-24.2024",
+      "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "10.1523/JNEUROSCI.0022-24.2024",
-      "identifier_type": "DOI",
+      "identifier": "https://nemar.org/dataset/on005121",
+      "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "9.7 GB (118 files)"
   ],
   "formats": [
     ".eeg",
@@ -52,29 +79,8 @@
     ".md",
     ".tsv",
     ".vhdr",
-    ".vmrk"
-  ],
-  "description": "This dataset contains sleep EEG recordings from 34 participants during targeted memory reactivation (TMR), a technique that uses auditory cues to selectively reactivate learned memories during sleep. The study investigates whether memory reactivation during sleep acts holistically on object memory or selectively enhances specific memory features. EEG data are accompanied by detailed event markers indicating cueing events and sleep spindle detection.",
-  "methods_description": "Sleep EEG data were collected from 34 participants during targeted memory reactivation. Auditory cues were administered during sleep to reactivate memories of learned satellite objects from different learning conditions (blocked, interleaved, and uncued categories). EEG data were organized using the FieldTrip data2bids function and formatted according to BIDS standards. Event markers include information about cueing events, sound indices, and satellite numbers corresponding to learned items.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "sleep"
-    },
-    {
-      "term": "memory reactivation"
-    },
-    {
-      "term": "targeted memory reactivation"
-    },
-    {
-      "term": "sleep spindles"
-    },
-    {
-      "term": "learning"
-    }
+    ".vmrk",
+    ".yml"
   ],
   "source_hash": "20d93784c923d48841430ee77ddef7464dee1d65677f887fb11d1edb0ace1a6d"
 }
