@@ -1,32 +1,82 @@
 {
   "version": "2.0",
-  "dataset_id": "on005121",
-  "source": "openneuro",
-  "source_id": "ds005121",
+  "pipeline_stage": "validated",
   "title": "Siefert2024",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
-    "Elizabeth M. Siefert": {},
+    "Elizabeth M. Siefert": {
+      "orcid": "0000-0002-5413-195X"
+    },
     "Sindhuja Uppuluri": {},
     "Jianing Mu": {},
     "Marlie C. Tandoc": {},
     "James W. Antony": {},
-    "Anna C. Schapiro": {}
+    "Anna C. Schapiro": {
+      "orcid": "0000-0001-8086-0331"
+    }
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005121.v1.0.2",
       "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005121",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005121",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1523/JNEUROSCI.0022-24.2024",
+      "identifier_type": "DOI",
+      "relation_type": "IsSupplementTo"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.2",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "9.04 GB (118 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "description": "This dataset contains overnight sleep EEG recordings from 34 participants who underwent Targeted Memory Reactivation (TMR) during sleep. It was collected to examine whether memory reactivation during sleep acts holistically on object memory representations, using cueing paradigms with studied and uncued satellite stimuli categorized as blocked, interleaved, or uncued. The data support the findings reported in Siefert et al. (2024) in the Journal of Neuroscience.",
+  "methods_description": "Sleep EEG data were collected while Targeted Memory Reactivation cues were administered to participants. Data organization into BIDS format was performed using the FieldTrip data2bids function. Events.tsv files contain cueing event information, including sound index numbers and corresponding satellite identifiers relating to studied categories (blocked, interleaved, uncued).",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Sleep",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
+    },
+    {
+      "term": "Memory Consolidation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069077"
+    },
+    {
+      "term": "Targeted Memory Reactivation"
+    },
+    {
+      "term": "Object Memory"
+    }
+  ],
+  "source_hash": "d0de95a69f6ea7b4cf821a57b6ef21ea884be1923c715000417e7debca416744"
 }
