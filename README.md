@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005121-blue)](https://doi.org/10.82901/nemar.on005121)
+
 Overview:
 This is the "Siefert2024" dataset. It is the sleep EEG data from Siefert et al., 2024 (https://doi.org/10.1523/JNEUROSCI.0022-24.2024). In brief, it contains sleep EEG data from 34 participants while Targeted Memory Reactivation was administered. 
 
