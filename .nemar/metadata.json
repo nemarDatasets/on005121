@@ -35,7 +35,7 @@
     {
       "identifier": "10.1523/JNEUROSCI.0022-24.2024",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -55,11 +55,20 @@
     ".vmrk",
     ".yml"
   ],
-  "description": "This dataset contains overnight sleep EEG recordings from 34 participants who underwent Targeted Memory Reactivation (TMR) during sleep. It was collected to examine whether memory reactivation during sleep acts holistically on object memory representations, using cueing paradigms with studied and uncued satellite stimuli categorized as blocked, interleaved, or uncued. The data support the findings reported in Siefert et al. (2024) in the Journal of Neuroscience.",
-  "methods_description": "Sleep EEG data were collected while Targeted Memory Reactivation cues were administered to participants. Data organization into BIDS format was performed using the FieldTrip data2bids function. Events.tsv files contain cueing event information, including sound index numbers and corresponding satellite identifiers relating to studied categories (blocked, interleaved, uncued).",
+  "description": "This dataset contains overnight sleep EEG recordings from 34 participants who underwent Targeted Memory Reactivation (TMR) to examine object memory consolidation. Auditory cues associated with previously learned satellite images were played during sleep to reactivate specific memories, and EEG was recorded to assess neural responses to cueing. The dataset supports investigation of whether memory reactivation during sleep operates holistically or selectively on object memory traces.",
+  "methods_description": "Sleep EEG data were collected while Targeted Memory Reactivation (TMR) was administered, with auditory cues corresponding to studied satellite stimuli played during sleep. Data were organized into BIDS format using the FieldTrip data2bids function. Event files record cueing information including sound index and corresponding satellite category (blocked, interleaved, or uncued).",
   "keywords": [
     {
       "term": "EEG"
+    },
+    {
+      "term": "sleep"
+    },
+    {
+      "term": "memory consolidation"
+    },
+    {
+      "term": "targeted memory reactivation"
     },
     {
       "term": "Sleep",
@@ -70,12 +79,6 @@
       "term": "Memory Consolidation",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D000069077"
-    },
-    {
-      "term": "Targeted Memory Reactivation"
-    },
-    {
-      "term": "Object Memory"
     }
   ],
   "source_hash": "d0de95a69f6ea7b4cf821a57b6ef21ea884be1923c715000417e7debca416744"
