@@ -1,86 +1,32 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "dataset_id": "on005121",
+  "source": "openneuro",
+  "source_id": "ds005121",
   "title": "Siefert2024",
-  "description": "This dataset contains overnight sleep EEG recordings from 34 participants who underwent Targeted Memory Reactivation (TMR) during sleep, as part of a study investigating whether memory reactivation acts holistically on object memory. Auditory cues associated with previously studied items (categorized as blocked, interleaved, or uncued) were played during sleep, and event markers recorded corresponding cue-related information. The dataset is formatted according to the BIDS standard to support reuse in sleep and memory research.",
-  "methods_description": "Sleep EEG data were collected while Targeted Memory Reactivation (TMR) cues were administered to participants during sleep. Events.tsv files record cueing events, including sound index numbers and corresponding satellite (studied item) identifiers. Data organization into BIDS format was performed using the FieldTrip data2bids function.",
-  "license": "CC0",
-  "dataset_type": "raw",
   "authors": {
-    "Elizabeth M. Siefert": {
-      "orcid": "0000-0002-5413-195X"
-    },
+    "Elizabeth M. Siefert": {},
     "Sindhuja Uppuluri": {},
     "Jianing Mu": {},
     "Marlie C. Tandoc": {},
     "James W. Antony": {},
-    "Anna C. Schapiro": {
-      "orcid": "0000-0001-8086-0331"
-    }
+    "Anna C. Schapiro": {}
   },
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Sleep",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D012890"
-    },
-    {
-      "term": "memory consolidation"
-    },
-    {
-      "term": "targeted memory reactivation"
-    },
-    {
-      "term": "declarative memory"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "FieldTrip"
-    }
-  ],
+  "license": "CC0",
+  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005121.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on005121",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1523/JNEUROSCI.0022-24.2024",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataset/on005121",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
     }
   ],
-  "resource_type_general": "Dataset",
-  "resource_type_specific": "EEG Dataset",
-  "modalities": [
+  "pipeline_stage": "seeded",
+  "bids_version": "1.2",
+  "recording_modality": [
     "eeg"
   ],
-  "sizes": [
-    "9.7 GB (118 files)"
-  ],
-  "formats": [
-    ".eeg",
-    ".json",
-    ".md",
-    ".tsv",
-    ".vhdr",
-    ".vmrk",
-    ".yml"
-  ],
-  "source_hash": "20d93784c923d48841430ee77ddef7464dee1d65677f887fb11d1edb0ace1a6d"
+  "datatypes": [
+    "eeg"
+  ]
 }
